@@ -5,8 +5,9 @@ public class LinkedListDemo {
 
 		SingleLinkedList s1 = new SingleLinkedList();
 		s1.insertFirst(56);
-		s1.append(30);
 		s1.append(70);
+		s1.insertBetween(56,30);
+		
 		s1.displayLinkedList();
 	}
 }
