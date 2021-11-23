@@ -44,7 +44,18 @@ public class SingleLinkedList {
 		node.next = temp.next;
 		temp.setNext(node);
 	}
+
 	public void pop() {
 		head = head.next;
+	}
+
+	public void popLast() {
+		Node currentNode = head;
+		Node tail = null;
+		while (currentNode.next != null) {
+			tail = currentNode;
+			currentNode = currentNode.next;
+		}
+		tail.next = currentNode.next;
 	}
 }
