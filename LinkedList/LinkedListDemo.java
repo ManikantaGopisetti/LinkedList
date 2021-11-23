@@ -9,6 +9,8 @@ public class LinkedListDemo {
 		s1.insertBetween(56, 30);
 		s1.popLast();
 		s1.findNode(30);
+		s1.insertBetween(30, 40);
+		s1.insertBetween(40, 70);
 		s1.displayLinkedList();
 	}
 }
