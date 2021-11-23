@@ -11,6 +11,7 @@ public class LinkedListDemo {
 		s1.findNode(30);
 		s1.insertBetween(30, 40);
 		s1.insertBetween(40, 70);
+		s1.delete(40);
 		s1.displayLinkedList();
 	}
 }
