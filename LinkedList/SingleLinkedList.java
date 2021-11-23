@@ -30,4 +30,18 @@ public class SingleLinkedList {
 		currentNode.setNext(node);
 	}
 
+	public void insertBetween(int first, int value) {
+		Node currentNode = head;
+		Node temp = null;
+		while (currentNode != null) {
+			if (currentNode.key == first) {
+				temp = currentNode;
+			}
+			currentNode = currentNode.next;
+		}
+		Node node = new Node();
+		node.setKey(value);
+		node.next = temp.next;
+		temp.setNext(node);
+	}
 }
